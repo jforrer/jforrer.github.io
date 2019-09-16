@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!--
+*****************************************************************************
+Title:Forrer's Bicycles Rentals
+Use: Lab Exercise: Implementing Page Layout and the CSS box Model
+School/Term: Southern Illinois University, Spring 2019
+Developed: 9/14/19
+Tested: 9/15/19
+******************************************************************************
+-->
+<html lang="en-US">
+<head>
+        <meta charset="utf-8">
+        <title>Forrer's Bicycles: Rentals</title>
+        <link rel="stylesheet" href="Styles/layout.css">
+</head>
+<body>
+  <!-- site header and title -->   
+    <header>
+        <h1 class="title"> Forrer's Bicycles</h1>
+        <h2>Your Friendly Neighborhood Bike Shop</h2>
+        <address>
+            <p>123 N. Faux Street Glenview, IL 60025 (847)555-1234</p>       
+        </address>
+        <br>
+        <img class="logo" src="images/bicycle-blackoutline2.png" alt="Bike Image" height="125" width="250"> 
+    </header>
+    
+       <!-- left side -->
+    <main class ="bikerentals">
+        <h3 class="rentals">Bikes Available for Rent</h3>
+        
+            <h4>Road Bikes</h4>
+        <p> Our road bikes are easy to handle and fun to ride! Great for crusing around town, commuting, or just having fun! </p>
+                <ol>
+                    <li>Giant Escape 2</li>
+                    <li>Liv Alight 2020</li>
+                </ol>
+        
+            <h4>Mountain Bikes</h4>
+                <p>Our Mountain bikes are designed for tough trails and rough riding. Perfect for barreling down the trails, bike coures, or casual off road adventures. </p>
+                <ol>
+                    <li>Giant Anthem Advanced 29</li>
+                    <li>Liv Hail Advanced</li>
+                </ol>
+        
+        <p class="disclaimer"><small>Bike Models and availability are subject to change.</small></p>
+    </main>
+    
+    <!-- right side -->
+    <aside class="bikerentalinfo">
+        <h3 class="rentals">Rental Information</h3>
+    <p>Forrer's Bicyles is proud to offer four different bikes available for rental with daily and weekly rates.</p>
+        <p><strong>Pricing:</strong></p>
+        
+        <ul>
+            <li>Road Bikes - $25 per day or $150 per week</li>
+            <li>Mountain Bikes - $35 per day or $200 per week</li>
+        </ul>
+        
+    <p>You can bring your own helmet or rent from us for an additonal $5 per day or $20 for the week (helmet wear is <strong>mandatory</strong> on MTB trails)</p>
+    </aside>
+    
+    <!-- Footer Section -->
+    <footer>
+     <p><small>This website is intended for educational purposes only.</small></p>
+         <p>IST-336-940 at <a href="https://www.siu.edu">Southern Illinois University</a> </p>
+    </footer>
+</body>
+</html>

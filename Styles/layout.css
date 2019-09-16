@@ -1,0 +1,103 @@
+
+/*****************************************************************************
+Title: Forrer's Bicycles Css 
+Use: Lab Exercise: Implementing Page Layout and CSS
+School/Term: Southern Illinois University, Spring 2019
+Developed: 9/13/19
+Tested: 9/15/19
+******************************************************************************/
+
+body {
+    align-items: center;
+    background-color: lightblue;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    margin: 10px;
+    width: 725px;
+ }   
+/* Page Title Heading */
+h1.title {
+    text-align: center;
+    padding: 10px;
+    text-shadow: 1px 1px grey;    
+}
+
+
+address {
+    text-align: center;
+}
+
+p {
+    padding-left:5px; 
+    padding-right: 5px;
+}
+/* Main Logo Image */
+img.logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: inherit;
+    border: 2px solid blue;
+    border-radius: 25px;
+    padding: 5px;
+}
+
+header {
+    border-bottom: 3px solid black;
+    align-content: center;
+    padding: 2px;
+}
+
+footer {
+    clear: both;
+    border-top: 3px solid black;
+    text-align: center;
+    font-size: 70%;
+}
+/* Heading Styles */
+h2 {
+    text-align: center;
+    padding: 10px;
+}
+
+h3 {
+    padding: 10px;
+}
+
+h4 {
+    padding: 10px;
+    text-align: left;
+}
+/* Unorded list of available bikes on the main page */
+#bike_list {
+    padding-left: 10px;
+}
+
+/* Bike Rental Title Header*/
+.rentals {
+   text-align: center;
+}
+
+/* Left side of rental page*/
+.bikerentals {
+    height: 350px;
+    width; 425px;
+    float: left;
+    margin: 10px;
+    clear: none;
+}
+
+/* right side of rental page */
+.bikerentalinfo{
+    height: 350px;
+    width: 300px;
+    float: right;
+    margin: 10px;
+    background-color: burlywood;
+    
+    
+}
+ /* Bike Rental Disclaimer */
+.disclaimer {
+    font-size: 75%;
+}
