@@ -8,29 +8,27 @@ Tested: 9/15/19
 ******************************************************************************/
 
 body {
-    align-items: center;
     background-color: lightblue;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Ariel, Helvetica, sans-serif;
     font-size: 100%;
-    margin: 10px;
-    width: 725px;
+    margin: 10px ;  /*setting this margin to fixed is preventing the page from displaying centered. adding "auto" centers page. need to enclose main body after*/
+    width: 725px; 
+    align-content: center;
  }   
 /* Page Title Heading */
 h1.title {
     text-align: center;
     padding: 10px;
-    text-shadow: 1px 1px grey;    
+    text-shadow: 1px 2px grey; 
+    font-size: 300%;
+    
 }
-
-
 address {
     text-align: center;
+    font-size: 90%;
 }
 
-p {
-    padding-left:5px; 
-    padding-right: 5px;
-}
+
 /* Main Logo Image */
 img.logo {
     display: block;
@@ -46,6 +44,11 @@ header {
     border-bottom: 3px solid black;
     align-content: center;
     padding: 2px;
+}
+
+main {
+    clear:left;
+    align-content: center;
 }
 
 footer {
@@ -68,9 +71,28 @@ h4 {
     padding: 10px;
     text-align: left;
 }
+
+/*Link Styling*/
+a {font-weight: bold;
+}
+
+a:visited {
+    color: darkblue;
+}
+
+a:hover, a:focus {
+    color: blue;
+}
+
 /* Unorded list of available bikes on the main page */
 #bike_list {
     padding-left: 10px;
+}
+
+/*Basic paragraph styling*/
+p {
+    padding-left:5px; 
+    padding-right: 5px;
 }
 
 /* Bike Rental Title Header*/
@@ -80,24 +102,31 @@ h4 {
 
 /* Left side of rental page*/
 .bikerentals {
-    height: 350px;
-    width; 425px;
+    
+    width: 350px;
+    height: 550px;
+    margin: 5px;
     float: left;
-    margin: 10px;
-    clear: none;
 }
 
 /* right side of rental page */
 .bikerentalinfo{
-    height: 350px;
-    width: 300px;
+    width: 350px;
+    height: 330px;
     float: right;
-    margin: 10px;
+    margin: 5px;
     background-color: burlywood;
-    
+    border: 1px solid black;
     
 }
  /* Bike Rental Disclaimer */
 .disclaimer {
     font-size: 75%;
+}
+
+#mtb {
+    clear:both;
+    padding: 15px;
+    
+    
 }
