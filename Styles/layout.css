@@ -4,7 +4,7 @@ Title: Forrer's Bicycles Css
 Use: Lab Exercise: Implementing Page Layout and CSS
 School/Term: Southern Illinois University, Spring 2019
 Developed: 9/13/19
-Tested: 9/15/19
+Tested: 9/22/19
 ******************************************************************************/
 
 body {
@@ -18,7 +18,7 @@ body {
 /* Page Title Heading */
 h1.title {
     text-align: center;
-    padding: 10px;
+    padding: 1px;
     text-shadow: 1px 2px grey; 
     font-size: 300%;
     
@@ -126,7 +126,40 @@ p {
 
 #mtb {
     clear:both;
-    padding: 15px;
-    
-    
+    padding: 15px;   
 }
+
+/* Sets sub-heading style for child pages */
+.subheader {
+    text-align: center;
+    padding: 10px;
+}
+
+/* Header Navigation Style*/
+#nav_menu ul {
+    list-style-type: none;
+    padding: 1em; 
+    text-align: center;
+    border-top: 3px solid black;
+    padding-bottom: 2em;   
+}
+
+#nav_menu ul li {
+    float: left;
+}
+
+#nav_menu ul li a.current {
+    text-decoration: underline;
+}
+#nav_menu ul li a {
+    text-align: center;
+    display: block;
+    width: 134px;
+    padding: .5em 0;
+    text-decoration: none;
+    background-color: darkblue;
+    color: white;
+    font-weight: bold;
+    border-right: 2px solid lightblue;
+}
+
