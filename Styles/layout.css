@@ -14,7 +14,7 @@ body {
     font-size: 100%;
     margin: auto;  /*set to "auto" centers page. need to enclose main body after*/
     width: 90%; /* changed from 725px*/
-    max-width: 725px; /*set max width to center page prevent content from stretching too far from original desing*/
+    max-width: 825px; /*set max width to center page prevent content from stretching too far from original desing*/
     align-content: center;
  }   
 /* Page Title Heading */
