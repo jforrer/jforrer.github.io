@@ -16,7 +16,6 @@ Tested: 9/29/19
 
 /* tablet portrait to standard 960 */
 @media only screen and (max-width: 949px){
-    h1 { font-size: 1.75em; }
     h2 {font-size: 1.5em; }
     h3 {font-size: 1em; }
     h4 {font-size: .90em; }
@@ -27,9 +26,7 @@ Tested: 9/29/19
 @media only screen and (max-width: 767px) {  
 
     #nav_menu {display: none; }/*hides the standard menu*/
-    #mobile_menu {display: block; }/* display the mobile menu*/
-   
-    h1 { font-size: 1.5em; }
+    #mobile_menu {display: block; }/* display the mobile menu*/ 
     h2 {font-size: 1.2em; }
     h3 {font-size: 1em; }
     h4 {font-size: .95em; }
@@ -40,9 +37,7 @@ Tested: 9/29/19
 @media only screen and (max-width: 490px) {
     
     #nav_menu {display: none} /*hides the standard menu*/
-    #mobile_menu {display: block; }/* display the mobile menu*/
-        
-    h1 { font-size: 1.5em; }
+    #mobile_menu {display: block; }/* display the mobile menu*/       
     h2 {font-size: 1.2em; }
     h3 {font-size: 1em; }
     h4 {font-size: .95em; }
