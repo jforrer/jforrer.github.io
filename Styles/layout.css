@@ -210,19 +210,15 @@ p {
     p {font-size: .85em}
 }
    
-
 /*Mobile portrait to mobile landscape*/
 @media only screen and (max-width 479px) {
     #nav_menu {display: none} /*hides the standard menu*/
     #mobile_menu {display: block; }/* display the mobile menu*/
         
-   
-    body {
-        width: 100%;
-        margin: auto;
-        border:none;
-         }
-    
+h1 { font-size: 1.5em; }
+    h2 {font-size: 1.2em; }
+    h3 {font-size: 1em; }
+    h4 {font-size: .95em; }
     p{font-size: .8em;}
 }
 
