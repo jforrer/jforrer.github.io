@@ -1,18 +1,20 @@
 
 /*****************************************************************************
 Title: Forrer's Bicycles Css 
-Use: Lab Exercise: Implementing Page Layout and CSS
+Use: Lab Exercise: Responsive Web Desing
 School/Term: Southern Illinois University, Spring 2019
 Developed: 9/13/19
-Tested: 9/22/19
+Modified:9/28/19
+Tested: 9/29/19
 ******************************************************************************/
 
 body {
     background-color: lightblue;
     font-family: Ariel, Helvetica, sans-serif;
     font-size: 100%;
-    margin: 10px ;  /*setting this margin to fixed is preventing the page from displaying centered. adding "auto" centers page. need to enclose main body after*/
-    width: 725px; 
+    margin: auto;  /*set to "auto" centers page. need to enclose main body after*/
+    width: 90%; /* changed from 725px*/
+    max-width: 725px; /*set max width to center page prevent content from stretching too far from original desing*/
     align-content: center;
  }   
 /* Page Title Heading */
@@ -20,7 +22,7 @@ h1.title {
     text-align: center;
     padding: 1px;
     text-shadow: 1px 2px grey; 
-    font-size: 300%;
+    font-size: 3em;
     
 }
 address {
@@ -35,20 +37,27 @@ img.logo {
     margin-left: auto;
     margin-right: auto;
     position: inherit;
-    border: 2px solid blue;
-    border-radius: 25px;
-    padding: 5px;
+    border: .1em solid blue;
+    border-radius: 1em;
+    padding: .1em;
+    height: 100%;
+    max-height: 130px;
+    width:34.4827%;
+    max-width: 249px;
 }
 
 header {
     border-bottom: 3px solid black;
     align-content: center;
-    padding: 2px;
+    padding: .1em;
+    width: 100%; /* Set width to accomodate fluid design changes*/
 }
 
 main {
     clear:left;
     align-content: center;
+    width:auto;
+    
 }
 
 footer {
@@ -56,20 +65,24 @@ footer {
     border-top: 3px solid black;
     text-align: center;
     font-size: 70%;
+     width: 100%; /* Set width to accomodate fluid design changes*/
 }
 /* Heading Styles */
 h2 {
     text-align: center;
-    padding: 10px;
+    padding: 1.3793103%; /*coverted from 10px*/
+    font-size: 1.75em;
 }
 
 h3 {
-    padding: 10px;
+    padding: 1.3793103%; /*coverted from 10px*/
+    font-size: 1.5em;
 }
 
 h4 {
-    padding: 10px;
+    padding: 1.3793103%; /*coverted from 10px*/
     text-align: left;
+    font-size: 1.15em;
 }
 
 /*Link Styling*/
@@ -103,20 +116,21 @@ p {
 /* Left side of rental page*/
 .bikerentals {
     
-    width: 350px;
-    height: 550px;
-    margin: 5px;
+    width: 48.87586%;
+    height: 100%; /*Converted from 550px for main content*/
+   
     float: left;
 }
 
 /* right side of rental page */
 .bikerentalinfo{
-    width: 350px;
-    height: 330px;
+    width: 48.87586%;
+    height: 60%;
     float: right;
-    margin: 5px;
+    padding: .2%;
     background-color: burlywood;
-    border: 1px solid black;
+    border: 2px solid black;
+    margin: .2%;
     
 }
  /* Bike Rental Disclaimer */
@@ -126,26 +140,31 @@ p {
 
 #mtb {
     clear:both;
-    padding: 15px;   
+    padding: 1.5em;
+    height 22.727%;
+    max-height: 125px;
+    width: 60%;
 }
 
 /* Sets sub-heading style for child pages */
 .subheader {
     text-align: center;
-    padding: 10px;
+    padding: 1.3793103%;
 }
 
-/* Header Navigation Style*/
+/* Header Navigation Style - Set all widths to % for responsive design*/
 #nav_menu ul {
     list-style-type: none;
     padding: 1em; 
     text-align: center;
     border-top: 3px solid black;
-    padding-bottom: 2em;   
+    padding-bottom: 2em;
+   
 }
 
 #nav_menu ul li {
     float: left;
+    width: 20% /* 5 menu items  1/5 = 20%*/
 }
 
 #nav_menu ul li a.current {
@@ -154,12 +173,59 @@ p {
 #nav_menu ul li a {
     text-align: center;
     display: block;
-    width: 134px;
     padding: .5em 0;
     text-decoration: none;
     background-color: darkblue;
     color: white;
     font-weight: bold;
-    border-right: 2px solid lightblue;
+    border-right:  solid lightblue;
 }
+
+/* hide the mobile menu initially*/
+#mobile_menu 
+{ display: none;}
+
+/*Media Queries */
+
+/* tablet portrait to standard 960 */
+@media only screen and (max-width: 959px){
+    #nav_menu ul li a { font-size: .875em; }
+    h1 { font-size: 1.75em; }
+    h2 {font-size: 1.5em; }
+    h3 {font-size: 1em; }
+    h4 {font-size: .90em; }
+    p{font-size: .9em}
+}
+
+/* mobile landscape to tablet portrait */
+@media only screen and (max-width: 767px) {  
+
+    #nav_menu {display: none; }/*hides the standard menu*/
+    #mobile_menu {display: block; }/* display the mobile menu*/
+   
+   #nav_menu ul li a { font-size: .975em; }
+    h1 { font-size: 1.5em; }
+    h2 {font-size: 1.2em; }
+    h3 {font-size: 1em; }
+    h4 {font-size: .95em; }
+    p {font-size: .85em}
+}
+   
+
+/*Mobile portrait to mobile landscape*/
+@media only screen and (max-width 479px) {
+    #nav_menu {display: none} /*hides the standard menu*/
+    #mobile_menu {display: block; }/* display the mobile menu*/
+        
+   
+    body {
+        width: 100%;
+        margin: auto;
+        border:none;
+         }
+    
+    p{font-size: .8em;}
+}
+
+
 

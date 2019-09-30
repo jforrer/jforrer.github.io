@@ -3,11 +3,11 @@
 *****************************************************************************
 Title: Forrer's Bicycles
 https://jforrer.github.io
-Use: Lab Exercise: Structure and Coding HTML Pages
+Use: Lab Exercise: Responsive Web Design
 School/Term: Southern Illinois University, Spring 2019
 Developed: August 29th, 2019
-Tested: August 31st, 2019; Passed on Firefox, Chrome and Safari browsers.
-Validated: September 1st, 2019 https://validator.w3.org
+Tested: September 29th, 2019; Passed on Firefox, Chrome and Safari browsers.
+Validated: September 29th, 2019 https://validator.w3.org
 ******************************************************************************
 -->
 <html lang="en-US">
@@ -15,11 +15,21 @@ Validated: September 1st, 2019 https://validator.w3.org
         <meta charset="utf-8">
         <meta name="description" content="Home page for Forrer's Bicycle Shop of Glenview, IL. Your Friendly Neighborhood Bike Shop. Specializing in new and used bikes, parts, repair services, and accessories">
         <meta name="keywords" content="Forrer, bikes, glenview, used bikes, bicycles, bicycle repair, bike repair, bicycle repair">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         
         <title>Forrer's Bicycles</title>
         <link rel="shortcut icon" href ="images/favicon.ico">
         <!--CSS-->
         <link rel="stylesheet" href="Styles/layout.css">
+        <!-- SlickNav -->
+        <link rel="stylesheet" href="Styles/slicknav.css">
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="js/jquery.slicknav.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+            });
+        </script>
 </head>
 <body>
     
@@ -31,9 +41,10 @@ Validated: September 1st, 2019 https://validator.w3.org
             <p>123 N. Faux Street Glenview, IL 60025 (847)555-1234</p>       
         </address>
         <br>
-        <img class="logo" src="images/bicycle-blackoutline2.png" alt="Bike Image" height="125" width="250">
+        <img class="logo" src="images/bicycle-blackoutline2.png" alt="Bike Image"> <!-- removed  height="125" width="250" set in css -->
         
         <!-- Header Navigation Menu-->
+        <nav id="mobile_menu"></nav> <!-- sets the mobile menu when needed-->
         <nav id="nav_menu">
             <ul>
                 <li><a href="index.htm" class="current">Home</a></li>

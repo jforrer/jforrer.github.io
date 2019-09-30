@@ -5,7 +5,7 @@ Title:Forrer's Bicycles Rentals
 Use: Lab Exercise: Implementing Page Layout and the CSS box Model
 School/Term: Southern Illinois University, Spring 2019
 Developed: 9/14/19
-Tested: 9/15/19
+Tested: 9/29/19
 ******************************************************************************
 -->
 <html lang="en-US">
@@ -15,6 +15,15 @@ Tested: 9/15/19
         <meta name="description" content= "Bicycle rentals, prices,and information">
         <meta name="keywords" content="bike rental, street bike, mountian bike,rental price">
         <link rel="stylesheet" href="Styles/layout.css">
+                <!-- SlickNav -->
+        <link rel="stylesheet" href="Styles/slicknav.css">
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="js/jquery.slicknav.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+            });
+        </script>
 </head>
 <body>
   <!-- site header and title -->   
@@ -25,9 +34,10 @@ Tested: 9/15/19
             <p>123 N. Faux Street Glenview, IL 60025 (847)555-1234</p>       
         </address>
         <br>
-       <img class="logo" src="images/bicycle-blackoutline2.png" alt="Bike Image" height="125" width="250">
+       <img class="logo" src="images/bicycle-blackoutline2.png" alt="Bike Image"> <!-- removed  height="125" width="250" set in css -->
         
         <!-- Header Navigation Menu-->
+        <nav id="mobile_menu"></nav> <!-- sets the mobile menu when needed-->
         <nav id="nav_menu">
             <ul>
                 <li><a href="index.htm">Home</a></li>
@@ -75,7 +85,7 @@ Tested: 9/15/19
         </ul>
   
         <p>You can bring your own helmet or rent from us for an additonal $5 per day or $20 for the week (helmet wear is <strong>mandatory</strong> on MTB trails)</p>
-        <img id="mtb" src="images/mountain-bike-162109_960_720.png" alt="MTB Image" height="125" >
+        <img id="mtb" src="images/mountain-bike-162109_960_720.png" alt="MTB Image"><!--image size set in CSS (fluid) -->
             
     </section>
    </main> 
