@@ -67,6 +67,78 @@ footer {
     font-size: 70%;
      width: 100%; /* Set width to accomodate fluid design changes*/
 }
+
+/* Header Navigation Style - Set all widths to % for responsive design*/
+#nav_menu ul {
+    list-style-type: none;
+    padding: 1em; 
+    text-align: center;
+    border-top: 3px solid black;
+    padding-bottom: 2em;
+   
+}
+
+#nav_menu ul li {
+    float: left;
+    width: 20% /* 5 menu items  1/5 = 20%*/
+}
+
+#nav_menu ul li a.current {
+    text-decoration: underline;
+}
+#nav_menu ul li a {
+    text-align: center;
+    display: block;
+    padding: .5em 0;
+    text-decoration: none;
+    background-color: darkblue;
+    color: white;
+    font-weight: bold;
+    border-right:  solid lightblue;
+}
+
+/* hide the mobile menu initially*/
+#mobile_menu 
+{ display: none;}
+
+/*Media Queries */
+
+/* tablet portrait to standard 960 */
+@media only screen and (max-width: 959px){
+    #nav_menu ul li a { font-size: .875em; }
+  /*  h1 { font-size: 1.75em; }
+    h2 {font-size: 1.5em; }
+    h3 {font-size: 1em; }
+    h4 {font-size: .90em; }
+    p{font-size: .9em} */
+}
+
+/* mobile landscape to tablet portrait */
+@media only screen and (max-width: 767px) {  
+
+    #nav_menu {display: none; }/*hides the standard menu*/
+    #mobile_menu {display: block; }/* display the mobile menu*/
+   
+  /*  h1 { font-size: 1.5em; }
+    h2 {font-size: 1.2em; }
+    h3 {font-size: 1em; }
+    h4 {font-size: .95em; }
+    p {font-size: .85em}*/
+}
+   
+/*Mobile portrait to mobile landscape*/
+@media only screen and (max-width 479px) {
+    
+    #nav_menu {display: none} /*hides the standard menu*/
+    #mobile_menu {display: block; }/* display the mobile menu*/
+        
+    /*h1 { font-size: 1.5em; }
+    h2 {font-size: 1.2em; }
+    h3 {font-size: 1em; }
+    h4 {font-size: .95em; }
+    p{font-size: .8em;}*/
+}
+
 /* Heading Styles */
 h2 {
     text-align: center;
@@ -151,76 +223,4 @@ p {
     text-align: center;
     padding: 1.3793103%;
 }
-
-/* Header Navigation Style - Set all widths to % for responsive design*/
-#nav_menu ul {
-    list-style-type: none;
-    padding: 1em; 
-    text-align: center;
-    border-top: 3px solid black;
-    padding-bottom: 2em;
-   
-}
-
-#nav_menu ul li {
-    float: left;
-    width: 20% /* 5 menu items  1/5 = 20%*/
-}
-
-#nav_menu ul li a.current {
-    text-decoration: underline;
-}
-#nav_menu ul li a {
-    text-align: center;
-    display: block;
-    padding: .5em 0;
-    text-decoration: none;
-    background-color: darkblue;
-    color: white;
-    font-weight: bold;
-    border-right:  solid lightblue;
-}
-
-/* hide the mobile menu initially*/
-#mobile_menu 
-{ display: none;}
-
-/*Media Queries */
-
-/* tablet portrait to standard 960 */
-@media only screen and (max-width: 959px){
-    #nav_menu ul li a { font-size: .875em; }
-    h1 { font-size: 1.75em; }
-    h2 {font-size: 1.5em; }
-    h3 {font-size: 1em; }
-    h4 {font-size: .90em; }
-    p{font-size: .9em}
-}
-
-/* mobile landscape to tablet portrait */
-@media only screen and (max-width: 767px) {  
-
-    #nav_menu {display: none; }/*hides the standard menu*/
-    #mobile_menu {display: block; }/* display the mobile menu*/
-   
-    h1 { font-size: 1.5em; }
-    h2 {font-size: 1.2em; }
-    h3 {font-size: 1em; }
-    h4 {font-size: .95em; }
-    p {font-size: .85em}
-}
-   
-/*Mobile portrait to mobile landscape*/
-@media only screen and (max-width 479px) {
-    #nav_menu {display: none} /*hides the standard menu*/
-    #mobile_menu {display: block; }/* display the mobile menu*/
-        
-h1 { font-size: 1.5em; }
-    h2 {font-size: 1.2em; }
-    h3 {font-size: 1em; }
-    h4 {font-size: .95em; }
-    p{font-size: .8em;}
-}
-
-
 
