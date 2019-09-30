@@ -126,7 +126,7 @@ footer {
 }
    
 /*Mobile portrait to mobile landscape*/
-@media only screen and (max-width 479px) {
+@media only screen and (max-width 490px) {
     
     #nav_menu {display: none} /*hides the standard menu*/
     #mobile_menu {display: block; }/* display the mobile menu*/
