@@ -203,7 +203,6 @@ p {
     #nav_menu {display: none; }/*hides the standard menu*/
     #mobile_menu {display: block; }/* display the mobile menu*/
    
-   #nav_menu ul li a { font-size: .975em; }
     h1 { font-size: 1.5em; }
     h2 {font-size: 1.2em; }
     h3 {font-size: 1em; }
