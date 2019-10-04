@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<!--
+*****************************************************************************
+Title:Forrer's Bicycles Rentals
+Use: Lab Exercise: Advanced Responsive Web Design
+School/Term: Southern Illinois University, Spring 2019
+Developed: 9/14/19
+Modified:10/1/19
+Tested: 10//19
+******************************************************************************
+-->
+<html lang="en-US">
+<head>
+        <meta charset="utf-8">
+        <title>Forrer's Bicycles: Rentals</title>
+        <meta name="description" content= "Bicycle rentals, prices,and information">
+        <meta name="keywords" content="bike rental, street bike, mountian bike,rental price">
+        <link rel="stylesheet" href="Styles/rwd_layout.css">  
+         <link rel="stylesheet" href="Styles/slicknav.css">
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="js/jquery.slicknav.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+            });
+        </script>
+</head>
+    
+<body>
+    <!---------------site header and title --------------------------->   
+    <header>
+        <h1 id="title"> Forrer's Bicycles</h1>
+        <h2 id="subtitle">Your Friendly Neighborhood Bike Shop</h2>
+        <address>
+            <p>123 N. Faux Street Glenview, IL 60025 (847)555-1234</p>       
+        </address>
+        <br>
+       <img class="logo" src="images/bicycle-blackoutline2.png" alt="Bike Image"> <!-- removed  height="125" width="250" set in css -->  
+    </header> 
+    
+<!--------------------Navigation Menu---------------------------->
+      <nav id="mobile_menu"></nav> <!--sets the mobile menu when needed-->
+        <nav id="nav_menu">
+            <ul>
+                <li><a href="index.htm">Home</a></li>
+                <li><a href="sales.htm">Sales</a></li>
+                <li><a href="rentals.htm" class="current">Rentals</a></li>
+                <li><a href="services.htm">Services</a></li>
+                <li><a href="contact.htm">Contact</a></li>
+            </ul>
+        </nav>
+<!--------------Main Section------------------------------------>
+    <main>   
+          <!------left side-------->
+        <section class="bikerentals">
+       <h3 class="rentals">Bikes Available for Rent</h3>
+        
+            <h4>Road Bikes</h4>
+        <p> Our road bikes are easy to handle and fun to ride! Great for crusing around town, commuting, or just having fun! </p> 
+                <ol>
+                    <li>Giant Escape 2</li>
+                    <li>Liv Alight 2020</li>
+                </ol>
+        
+            <h4>Mountain Bikes</h4>
+                <p>Our Mountain bikes are designed for tough trails and rough riding.
+                Perfect for barreling down the trails, bike coures, or casual off road adventures. </p>
+                <ol>
+                    <li>Giant Anthem Advanced 29</li>
+                    <li>Liv Hail Advanced</li>
+                </ol>
+        
+        <p class="disclaimer"><small>Bike Models and availability are subject to change. </small></p>
+        </section>
+        
+        <!------right side----->
+        <section class="bikerentalinfo">
+
+        <h3 class="rentals">Rental Information</h3>
+            <p>Forrer's Bicyles is proud to offer four different bikes available for rental with daily and weekly rates.</p>
+        <p><strong>Pricing:</strong></p>
+        
+        <ul>
+            <li>Road Bikes - $25 per day or $150 per week</li>
+            <li>Mountain Bikes - $35 per day or $200 per week</li>
+        </ul>
+  
+        <p>You can bring your own helmet or rent from us for an additonal $5 per day or $20 for the week (helmet wear is <strong>mandatory</strong> on MTB trails)</p>
+        <img id="mtb" src="images/mountain-bike-162109_960_720.png" alt="MTB Image"><!--image size set in CSS (fluid) -->
+            
+    </section>
+   </main> 
+    
+    <!-------------------------Footer----------------------->
+    <footer>
+     <p><small>This website is intended for educational purposes only.</small></p>
+         <p>IST-336-940 at <a href="https://www.siu.edu">Southern Illinois University</a> </p>
+    </footer>
+</body>
+</html>
