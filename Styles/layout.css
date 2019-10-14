@@ -8,40 +8,53 @@ Modified:9/28/19
 Tested: 9/29/19
 ******************************************************************************/
 
-/* hide the mobile menu initially*/
-#mobile_menu 
+html {
+    font-size 100%;
+}
+
+#mobile_menu /*hides the mobile menu*/ 
 { display: none;}
 
 /*Media Queries */
 
 /* tablet portrait to standard 960 */
 @media only screen and (max-width: 949px){
-    h2 {font-size: 1.5em; }
-    h3 {font-size: 1em; }
-    h4 {font-size: .90em; }
-    p {font-size: .9em} 
+    #title {font-size: 2.5em !important;}
+    h2 {font-size: 1.5em !important; }
+    h3 {font-size: 1.2em !important;  }
+    h4 {font-size: .95em !important;  }
+    p {font-size:  !important; } 
+    ol li {font-size: .95em  !important; }
+    ul li {font-size: .95em  !important; }
+    #nav_menu ul li a {font-size: 0.75em !important;}
 }
 
 /* mobile landscape to tablet portrait */
 @media only screen and (max-width: 767px) {  
-
-    #nav_menu {display: none; }/*hides the standard menu*/
-    #mobile_menu {display: block; }/* display the mobile menu*/ 
-    h2 {font-size: 1.2em; }
-    h3 {font-size: 1em; }
-    h4 {font-size: .95em; }
-    p {font-size: .85em}
+    #nav_menu {display: none; } /*hides standard menu*/
+    #mobile_menu {display: block; } /*display the mobile menu*/ 
+    #title {font-size: 1.8em !important;}
+    h2 {font-size: 1.2em !important; }
+    h3 {font-size: 1em !important; }
+    h4 {font-size: .95em !important; }
+    p {font-size: .85em !important; }
+    ol li {font-size: .85em !important;}
+    ul li {font-size: .85em !important;}
+    #nav_menu ul li a {font-size: 0.75em !important;}
 }
    
 /*Mobile portrait to mobile landscape*/
-@media only screen and (max-width: 490px) {
-    
-    #nav_menu {display: none} /*hides the standard menu*/
-    #mobile_menu {display: block; }/* display the mobile menu*/       
-    h2 {font-size: 1.2em; }
-    h3 {font-size: 1em; }
-    h4 {font-size: .95em; }
-    p{font-size: .8em;}
+@media only screen and (max-width: 490px) {  
+    #nav_menu {display: none} /*hides standard menu*/
+    #mobile_menu {display: block; } /*display the mobile menu*/
+    #title {font-size: 1.5em !important;}
+    h2 {font-size: 1.2em !important;  }
+    h3 {font-size: 1em !important; }
+    h4 {font-size: .90em !important; }
+    p  {font-size: .80em !important; }
+    ol li {font-size: .80em !important;}
+    ul li {font-size: .80em !important;}
+    #nav_menu ul li a {font-size: 0.75em !important;}
 }
 
 body {
@@ -51,7 +64,6 @@ body {
     margin: auto;  /*set to "auto" centers page. need to enclose main body after*/
     width: 90%; /* changed from 725px*/
     max-width: 825px; /*set max width to center page prevent content from stretching too far from original desing*/
-    align-content: center;
  }   
 /* Page Title Heading */
 h1.title {
@@ -85,12 +97,18 @@ header {
     border-bottom: 3px solid black;
     align-content: center;
     padding: .1em;
+    background-color: lightskyblue;
+    border: 1px solid black;
     width: 100%; /* Set width to accomodate fluid design changes*/
 }
 
 main {
     clear:left;
-    align-content: center;
+
+    padding: .1em;
+    background-color: deepskyblue;
+    border: 1px solid black;
+    margin: auto; 
     /*width:auto; */
     
 }
@@ -99,18 +117,25 @@ footer {
     clear: both;
     border-top: 3px solid black;
     text-align: center;
-    font-size: 70%;
+    font-size: 75%;
+    background-color: cadetblue;
+    border: 1px solid black;
      width: 100%; /* Set width to accomodate fluid design changes*/
 }
 
 /* Header Navigation Style - Set all widths to % for responsive design*/
+nav {
+    background-color: cadetblue;
+    margin: auto;
+}
 #nav_menu ul {
     list-style-type: none;
-    padding: 1em; 
+    padding: .75em; 
     text-align: center;
-    border-top: 3px solid black;
+    border: 2px solid black;
     padding-bottom: 2em;
-   
+    margin: auto;
+     
 }
 
 #nav_menu ul li {
@@ -124,16 +149,22 @@ footer {
 #nav_menu ul li a {
     text-align: center;
     display: block;
-    padding: .5em 0;
+    padding: .5em ;
     text-decoration: none;
     background-color: darkblue;
     color: white;
     font-weight: bold;
-    border-right: solid lightblue;
+    border-right: solid cadetblue;
 }
 
 
 /* Heading Styles */
+h1 {
+    text-align: center;
+    padding: 1px;
+    font-size: 3em;    
+}
+
 h2 {
     text-align: center;
     padding: 1.3793103%; /*coverted from 10px*/
@@ -165,7 +196,7 @@ a:hover, a:focus {
 
 /* Unorded list of available bikes on the main page */
 #bike_list {
-    padding-left: 10px;
+    margin: .5em;
 }
 
 /*Basic paragraph styling*/
@@ -218,3 +249,35 @@ p {
     padding: 1.3793103%;
 }
 
+
+#roller {
+    margin: 1em;
+    padding .5em;
+    vertical-align: middle;
+}
+
+#imageroller {
+    background-image: url(/images/bikegirl.jpg);
+    width: 518px;
+    height: 350px;
+    background-position: center;
+    margin: 1em;
+
+}
+
+#imageroller:hover {
+    background-image: url(/images/trailbike.jpg);
+}
+
+figcaption {
+    display: block;
+    font-weight: bold;
+    padding-top: .25em;
+    margin-bottom: .5em;
+    padding-left: .75em;
+    
+}
+
+video {
+    margin: 2em;
+}
