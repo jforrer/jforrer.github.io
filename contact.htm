@@ -39,6 +39,40 @@ Tested: 11/22/2019
             
             <h2>Contact Us:</h2>
             
+            <form action="response.htm" method="post" id="contact_form">
+        <fieldset> 
+            <legend>Your Info:</legend> 
+            <label for="fullname">Full Name:* </label>
+            <input type="text" name="fullname" id="fullname" autofocus required placeholder="First and Last Name" minlength="15" maxlength="15"><br>
+        
+            <label for="city">City:* </label>
+            <input type="text" name="city" id="city" required placeholder="Your City" min="4" maxlength="25"><br>
+            <label for="state">State:* </label>
+            <select name="state" id="state" required> 
+                <option value="Illinois">Illinois</option>
+                <option value="Wisconsin">Wisconsin</option>
+                <option value="Indiana">Indiana</option>
+                <option value="Kentucky">Kentucky</option>
+            </select><br>
+            <label for="Zip">Zip Code:* </label>
+            <input type="text" name="Zip" id="Zip" required placeholder="5 or 10 digits" pattern="^\d{5}(-\d{4})?$" title="99999-9999" min="5" maxlength="10"><br> 
+              <label for="email">E-Mail:* </label>
+            <input type="email" name="email" id="fullname" required placeholder="Your Email Address" min="10" maxlength="25"><br>
+            <label for="Phone">Phone:* </label>
+            <input type="tel" name="Phone" id="Phone" required placeholder="999-999-9999" pattern="^\d{3}[\-] \d{3}[\-] \d{4})?$" title="Must be 999-999-9999" min="10" maxlength="12"><br> 
+          
+            <label for="message">Message: </label>
+            <textarea id="message" required placeholder="Tell us what you're looking for!" minlength="20" maxlength="200"></textarea>
+        </fieldset>
+       
+    
+            
+            <label>&nbsp;</label>
+            <input type="submit" id="submit" value="Submit">
+           <!-- <input type="reset" id="reset" value="Reset"> -->
+       
+    </form>
+            
         </div>
        
         <div class="rightcontainer">

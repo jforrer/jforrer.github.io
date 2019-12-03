@@ -79,6 +79,67 @@ footer p {
 }
 
 
+.galleryleft {
+    padding: 1em;
+    width: 50%;   
+}
+
+.rightcontainer {
+    padding-left: 1em;
+    width: 50%;
+}
+
+
+fieldset {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding-top: .5em;
+   
+}
+label, input, select {
+    font-size: 90%
+}
+label {
+    display: block;
+    float: left;
+    width: 6em;
+    padding: .5rem;
+    font-weight: bold;
+    text-align: right;
+    margin-bottom: .5em;
+    margin-left: .5em;
+}
+
+input, select, textarea{
+    width: 15em;
+    margin-left: 1em;
+    margin-bottom: 1em;
+}
+input:required, input[required] {
+    border: 1px solid gray;
+}
+input:valid {
+    border: 1px solid black;
+}
+input:invalid {
+    box-shadow: none;
+}
+input:focus {
+    border: 2px solid black;
+}
+br {
+    clear: both;
+}
+#submit #reset {
+    box-shadow: 2px 2px 0;
+    
+}
+textarea {
+    height: 5em;
+    width: 25em;
+    font-family: sans-serif;
+}
+
 @media only screen and (max-width: 960px){
      
     }
