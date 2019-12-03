@@ -91,6 +91,10 @@ footer p {
     
     .rightcontainer {
         padding-top: .5em;
+        padding-left: 4em;
+    }
+    .leftcontainer{
+        padding-left: 4em;
     }
 }
      
