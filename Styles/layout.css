@@ -78,6 +78,10 @@ footer p {
     min-width: 200px;
 }
 
+.images {
+    height: 90%;
+    width: 90%;
+}
 
 .galleryleft {
     padding: 1em;
@@ -161,4 +165,19 @@ textarea {
      
 @media only screen and (max-width: 470px){
    
-  }
+     main {
+     display: block; }
+    
+    .rightcontainer {
+        padding-top: .5em;
+        padding-left: 3em;
+    }
+    .leftcontainer{
+        padding-left: 3em;
+    }
+}
+    
+  
+
+
+
